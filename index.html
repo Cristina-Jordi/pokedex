@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&family=Shadows+Into+Light&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="script.js"></script>
+	<title>Pokemon</title>
+</head>
+
+<body onload="init()">
+	<!-- Pokémon Search-->	
+	<div id="top"></div>
+		<div class="header-banner">
+			<a href="http://cristina-jordi.developerakademie.net/"><h1 class="title">Find Your Pokémon!</h1></a>
+			<img class="front-cover-pic" src="img/pikachu.png" alt="Pikachu">
+			<img class="silhouette" src="img/pikachu.png">
+			<input class="search-input" id="searchPoke" type="text" name="search" placeholder="... Suche deinen Pokémon" onkeyup="searchPokemon()">
+		</div>
+	
+	<!-- List all Pokemon -->
+	<div class="pokedex-container" id="list-all-pokedex"><div class="pokedex-all-container"></div></div>
+	<!-- End list all Pokemon -->
+
+	<!-- Pokedex-Card -->
+	<div id="poke-cards"></div>
+	<!-- End Pokedex-Card -->
+
+	<div><a href="#top"><img class="arrow" src="img/arrow.png" alt="to top"></a></div>
+
+</body>
+
+</html>
